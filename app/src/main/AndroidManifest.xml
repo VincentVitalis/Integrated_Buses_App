@@ -21,7 +21,7 @@
             android:name=".BusListActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".loginregister.RegisterActivity"
             android:exported="false"/>
         <activity
             android:name=".EditBusDetailsActivity"
@@ -40,14 +40,14 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBCfnvRWxRh2tTXKG2LIx8URN94KQhtOvs" />
+            android:value="Google Api_key Here" />
 
         <activity
             android:name=".MapsActivity"
             android:exported="false"
             android:label="@string/title_activity_maps" />
         <activity
-            android:name=".ui.login.LoginActivity"
+            android:name=".loginregister.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

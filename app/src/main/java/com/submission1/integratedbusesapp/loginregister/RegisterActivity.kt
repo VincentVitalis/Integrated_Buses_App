@@ -1,11 +1,8 @@
-package com.submission1.integratedbusesapp
+package com.submission1.integratedbusesapp.loginregister
 
 
-import android.content.Context
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
-import android.util.AttributeSet
 import android.util.Log
 import android.view.View
 import android.widget.AdapterView
@@ -14,12 +11,11 @@ import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.auth.ktx.userProfileChangeRequest
 import com.google.firebase.ktx.Firebase
+import com.submission1.integratedbusesapp.R
 import com.submission1.integratedbusesapp.databinding.ActivityRegisterBinding
-import com.submission1.integratedbusesapp.ui.login.LoginActivity
 
 
 class RegisterActivity : AppCompatActivity() {

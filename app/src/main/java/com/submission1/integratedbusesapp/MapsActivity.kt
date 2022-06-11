@@ -22,9 +22,8 @@ import com.google.android.gms.maps.model.CameraPosition
 import com.google.android.gms.maps.model.LatLng
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import com.submission1.integratedbusesapp.loginregister.LoginActivity
 import com.submission1.integratedbusesapp.databinding.ActivityMapsBinding
-import com.submission1.integratedbusesapp.ui.login.LoginActivity
-import kotlin.properties.Delegates
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
@@ -87,7 +86,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         }
         else if(item.itemId==R.id.Sign_out){
             FirebaseAuth.getInstance().signOut()
-            val moveIntent = Intent(this@MapsActivity,LoginActivity::class.java)
+            val moveIntent = Intent(this@MapsActivity, LoginActivity::class.java)
             startActivity(moveIntent)
         }
 

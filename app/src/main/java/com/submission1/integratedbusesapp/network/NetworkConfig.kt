@@ -1,5 +1,6 @@
-package com.submission1.integratedbusesapp
+package com.submission1.integratedbusesapp.network
 
+import com.submission1.integratedbusesapp.BuildConfig
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
