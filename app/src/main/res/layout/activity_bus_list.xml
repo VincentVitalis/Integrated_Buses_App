@@ -4,23 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MapsActivity">
+    tools:context=".BusListActivity">
 
-    <androidx.fragment.app.FragmentContainerView
-    android:id="@+id/map"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MapsActivity" />
-
-    <Button
-        android:id="@+id/cari_bus"
+    <TextView
+        android:id="@+id/coba_output"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/cari_bus"
-        android:layout_marginBottom="32dp"
+        android:minHeight="48dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="342dp"
+        android:layout_marginEnd="197dp"
+        android:layout_marginBottom="370dp"
+        android:text="HEY, INI hasil"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

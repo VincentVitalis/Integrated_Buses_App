@@ -38,7 +38,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         mAuth = Firebase.auth
-        binding.register.setOnClickListener { view ->
+        binding.register.setOnClickListener {
             val moveIntent = Intent(this@LoginActivity, RegisterActivity::class.java)
             startActivity(moveIntent)
         }
@@ -68,6 +68,7 @@ class LoginActivity : AppCompatActivity() {
             mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     val moveIntent = Intent(this@LoginActivity, MapsActivity::class.java)
+                    moveIntent.putExtra(MapsActivity.ROLE,extractRole())
                     startActivity(moveIntent)
                 } else {
                     Toast.makeText(this@LoginActivity, "Login Error", Toast.LENGTH_SHORT).show()
@@ -78,7 +79,7 @@ class LoginActivity : AppCompatActivity() {
     }
     private fun reload(){
         val moveIntent = Intent(this@LoginActivity,MapsActivity::class.java)
-        moveIntent.putExtra(MapsActivity.ROLE,role)
+        moveIntent.putExtra(MapsActivity.ROLE,extractRole())
         startActivity(moveIntent)
     }
     override fun onStart() {
@@ -87,6 +88,16 @@ class LoginActivity : AppCompatActivity() {
         val currentUser = mAuth.currentUser
         if(currentUser != null){
             reload()
+        }
+    }
+
+    private fun extractRole(): String{
+        val user = mAuth.currentUser
+        Log.d(TAG,user!!.displayName.toString())
+        return if(user.displayName!!.get(0) == 'u'){
+            "User"
+        } else {
+            "Kenek"
         }
     }
     companion object{

@@ -25,5 +25,6 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="prompt_username">Username</string>
     <string name="tambah_bus">Tambah Bus</string>
+    <string name="sign_out">Sign Out</string>
 
 </resources>

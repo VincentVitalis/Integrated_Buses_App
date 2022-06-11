@@ -2,6 +2,7 @@ package com.submission1.integratedbusesapp
 
 import android.Manifest
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.Location
 import android.os.Bundle
@@ -19,16 +20,24 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.CameraPosition
 import com.google.android.gms.maps.model.LatLng
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import com.submission1.integratedbusesapp.databinding.ActivityMapsBinding
+import com.submission1.integratedbusesapp.ui.login.LoginActivity
+import kotlin.properties.Delegates
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private lateinit var mMap: GoogleMap
     private lateinit var binding: ActivityMapsBinding
     private lateinit var fusedLocationProviderClient: FusedLocationProviderClient
+    private lateinit var firebaseUser: FirebaseUser
     private val defaultLocation = LatLng(-33.8523341, 151.2106085)
     private var lastKnownLocation: Location? = null
     private var cameraPosition: CameraPosition? = null
+    private var lat: Double = 0.0
+    private var long: Double = 0.0
+    private var user_role: String? = null
     private var TAG : String = MapsActivity::class.java.simpleName
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,25 +51,33 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
 
+        firebaseUser = FirebaseAuth.getInstance().currentUser!!
+
+        user_role= intent?.getStringExtra(ROLE)
+
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this)
 
         if (savedInstanceState != null) {
             lastKnownLocation = savedInstanceState.getParcelable(KEY_LOCATION)
             cameraPosition = savedInstanceState.getParcelable(KEY_CAMERA_POSITION)
         }
-
+        binding.cariBus.setOnClickListener {
+            val moveintent = Intent(this@MapsActivity,BusListActivity::class.java)
+            moveintent.putExtra(BusListActivity.LAT,lat)
+            moveintent.putExtra(BusListActivity.LONG,long)
+            startActivity(moveintent)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        if(ROLE=="kenek") {
+        return if(user_role=="Kenek") {
             val inflater = menuInflater
             inflater.inflate(R.menu.menu_kenek, menu)
-            return true
-        }
-        else{
+            true
+        } else{
             val inflater = menuInflater
             inflater.inflate(R.menu.menu_user,menu)
-            return true
+            true
         }
     }
 
@@ -68,6 +85,12 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         if(item.itemId==R.id.Edit_Bus){
 
         }
+        else if(item.itemId==R.id.Sign_out){
+            FirebaseAuth.getInstance().signOut()
+            val moveIntent = Intent(this@MapsActivity,LoginActivity::class.java)
+            startActivity(moveIntent)
+        }
+
         return true
     }
     override fun onSaveInstanceState(outState: Bundle) {
@@ -130,6 +153,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                  // Set the map's camera position to the current location of the device.
                  lastKnownLocation = task.result
                  if (lastKnownLocation != null) {
+                     lat = lastKnownLocation!!.latitude
+                     long = lastKnownLocation!!.longitude
                      mMap.moveCamera(
                          CameraUpdateFactory.newLatLngZoom(
                              LatLng(
