@@ -36,7 +36,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     private var cameraPosition: CameraPosition? = null
     private var lat: Double = 0.0
     private var long: Double = 0.0
-    private var user_role: String? = null
+    private var userRole: String? = null
     private var TAG : String = MapsActivity::class.java.simpleName
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -52,7 +52,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         firebaseUser = FirebaseAuth.getInstance().currentUser!!
 
-        user_role= intent?.getStringExtra(ROLE)
+        userRole= intent?.getStringExtra(ROLE)
 
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this)
 
@@ -69,7 +69,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        return if(user_role=="Kenek") {
+        return if(userRole=="Kenek") {
             val inflater = menuInflater
             inflater.inflate(R.menu.menu_kenek, menu)
             true
@@ -89,7 +89,12 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             val moveIntent = Intent(this@MapsActivity, LoginActivity::class.java)
             startActivity(moveIntent)
         }
-
+        else if(item.itemId==R.id.Tambah_Bus){
+            val moveIntent = Intent(this@MapsActivity, AddBusActivity::class.java)
+            moveIntent.putExtra(BusListActivity.LAT,lat)
+            moveIntent.putExtra(BusListActivity.LONG,long)
+            startActivity(moveIntent)
+        }
         return true
     }
     override fun onSaveInstanceState(outState: Bundle) {
@@ -178,7 +183,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     companion object{
         private const val DEFAULT_ZOOM = 15
         const val ROLE = "ROLE"
-        const val USER_NAME = "USER_NAME"
 
         private const val KEY_CAMERA_POSITION = "camera_position"
         private const val KEY_LOCATION = "location"

@@ -15,16 +15,23 @@
     <string name="action_sign_in">Sign In</string>
     <string name="action_login">Login</string>
     <string name="application_name">Integrated Buses App</string>
-
-    <string-array name="role">
-        <item>Pilih Role Anda</item>
-        <item>User</item>
-        <item>Kenek</item>
-    </string-array>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="prompt_username">Username</string>
     <string name="tambah_bus">Tambah Bus</string>
     <string name="sign_out">Sign Out</string>
-
+    <string name="nama_bus">Nama Bus</string>
+    <string name="lokasi_tujuan">Lokasi Tujuan</string>
+    <string name="lokasi_awal">Lokasi Awal</string>
+    <string name="kapasitas_bus">Kapasitas Bus</string>
+    <string name="informasi_bus">Informasi Bus</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Galeri</string>
+    <string name="gambar">Gambar</string>
+    <string name="tambah">Tambahkan Bus</string>
+    <string-array name="role">
+        <item>Pilih Role Anda</item>
+        <item>User</item>
+        <item>Kenek</item>
+    </string-array>
 </resources>

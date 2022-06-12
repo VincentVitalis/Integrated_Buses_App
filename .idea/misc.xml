@@ -3,13 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/drawable-v24/ic_capture.xml" value="0.216" />
+        <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/drawable-v24/ic_place_holder.xml" value="0.1245" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/drawable/ic_menu_camera.xml" value="0.1855" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.1855" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.1855" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/drawable/side_nav_bar.xml" value="0.1855" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.16331994645247658" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout-w936dp/activity_login.xml" value="0.190625" />
+        <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout/activity_add_bus.xml" value="0.4" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout/activity_bus_list.xml" value="0.18297101449275363" />
+        <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout/activity_camera.xml" value="0.18297101449275363" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout/activity_maps.xml" value="0.12" />
@@ -26,6 +30,7 @@
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/menu/main.xml" value="0.264" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/menu/menu_kenek.xml" value="0.25416666666666665" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/menu/menu_user.xml" value="0.25416666666666665" />
+        <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/xml/file_path.xml" value="0.11302083333333333" />
       </map>
     </option>
   </component>

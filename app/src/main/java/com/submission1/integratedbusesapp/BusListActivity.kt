@@ -19,8 +19,8 @@ class BusListActivity : AppCompatActivity() {
 
         _binding = ActivityBusListBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-
+        lat = intent.getDoubleExtra(LAT,-33.8523341)
+        long = intent.getDoubleExtra(LONG,151.2106085)
 
     }
     companion object{
