@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Integrated Buses App</string>
-    <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="welcome">"Welcome !"</string>
@@ -29,9 +28,64 @@
     <string name="gallery">Galeri</string>
     <string name="gambar">Gambar</string>
     <string name="tambah">Tambahkan Bus</string>
+    <string name="awal_tujuan">Awal - Tujuan :</string>
+    <string name="jumlah_penumpang">Jumlah Penumpang :</string>
+    <string name="_0">0</string>
+    <string name="kapasitas_maksimum">Kapasitas Maksimum :</string>
+    <string name="simpan_data_bus">Simpan Data Bus</string>
+    <string name="kapasitas_bus_maksimal">Kapasitas Bus Maksimal</string>
     <string-array name="role">
         <item>Pilih Role Anda</item>
         <item>User</item>
         <item>Kenek</item>
     </string-array>
+
+    <string-array name="id">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="namabus">
+        <item>Xtrans</item>
+        <item>Jackal Holidays</item>
+        <item>Areon Trans</item>
+        <item>Cititrans</item>
+        <item>Cititrans</item>
+    </string-array>
+
+    <string-array name="awaltujuan">
+        <item>Jakarta</item>
+        <item>Jakarta</item>
+        <item>Jakarta</item>
+        <item>Jakarta</item>
+        <item>Jakarta</item>
+    </string-array>
+
+    <string-array name="akhirtujuan">
+        <item>bandung</item>
+        <item>bandung</item>
+        <item>bandung</item>
+        <item>bandung</item>
+        <item>bandung</item>
+    </string-array>
+
+    <string-array name="jumlahpenumpang">
+        <item>5</item>
+        <item>7</item>
+        <item>9</item>
+        <item>5</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="kapasitasmaks">
+        <item>10</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>20</item>
+    </string-array>
+
 </resources>

@@ -82,7 +82,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(item.itemId==R.id.Edit_Bus){
-
+            val moveIntent = Intent(this@MapsActivity, EditBusListActivity::class.java)
+            startActivity(moveIntent)
         }
         else if(item.itemId==R.id.Sign_out){
             FirebaseAuth.getInstance().signOut()

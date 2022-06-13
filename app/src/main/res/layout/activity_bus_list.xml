@@ -6,18 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".BusListActivity">
 
-    <TextView
-        android:id="@+id/coba_output"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="342dp"
-        android:layout_marginEnd="197dp"
-        android:layout_marginBottom="370dp"
-        android:text="HEY, INI hasil"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cari_bus_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.submission1.integratedbusesapp.databinding.RowBusesBinding
 
-data class EditBusListAdapter(private val listBuses: ArrayList<Buses>): RecyclerView.Adapter<EditBusListAdapter.ListViewHolder>(){
+data class BusListAdapter(private val listBuses: ArrayList<Buses>): RecyclerView.Adapter<BusListAdapter.ListViewHolder>(){
     private lateinit var onItemClickCallback: OnItemClickCallback
 
     fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback){

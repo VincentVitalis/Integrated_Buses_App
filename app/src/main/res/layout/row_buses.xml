@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="24sp"
+            android:textColor="#757575"
+            android:text="@string/nama_bus"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_tujuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/awal_tujuan"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        <TextView
+            android:id="@+id/tujuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/awal_tujuan"
+            card_view:layout_constraintTop_toTopOf="@id/tv_tujuan"
+            card_view:layout_constraintStart_toEndOf="@id/tv_tujuan"
+            card_view:layout_constraintBottom_toBottomOf="@+id/tv_tujuan" />
+
+        <TextView
+            android:id="@+id/tv_jumlahpenumpang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/jumlah_penumpang"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@id/tv_tujuan"
+            />
+
+        <TextView
+            android:id="@+id/jumlahpenumpang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/_0"
+            card_view:layout_constraintTop_toTopOf="@id/tv_jumlahpenumpang"
+            card_view:layout_constraintStart_toEndOf="@+id/tv_jumlahpenumpang"
+            card_view:layout_constraintBottom_toBottomOf="@+id/tv_jumlahpenumpang" />
+
+        <TextView
+            android:id="@+id/tv_kapasitasmax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="@string/kapasitas_maksimum"
+            card_view:layout_constraintStart_toStartOf="@id/jumlahpenumpang"
+            card_view:layout_constraintBottom_toBottomOf="@id/jumlahpenumpang"
+            card_view:layout_constraintTop_toTopOf="@id/jumlahpenumpang"
+            />
+
+        <TextView
+            android:id="@+id/kapasitasmax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/_0"
+            card_view:layout_constraintTop_toTopOf="@+id/tv_kapasitasmax"
+            card_view:layout_constraintStart_toEndOf="@+id/tv_kapasitasmax"
+            card_view:layout_constraintBottom_toBottomOf="@+id/tv_kapasitasmax" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -14,10 +14,13 @@
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout/activity_add_bus.xml" value="0.4" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout/activity_bus_list.xml" value="0.18297101449275363" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout/activity_camera.xml" value="0.18297101449275363" />
+        <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout/activity_edit_bus_details.xml" value="0.536" />
+        <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout/activity_edit_bus_list.xml" value="0.19429347826086957" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout/activity_maps.xml" value="0.12" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout/activity_register.xml" value="0.25416666666666665" />
+        <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout/activity_testing_purposes.xml" value="0.19429347826086957" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout/app_bar_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout/content_main.xml" value="0.21784420289855072" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout/dropdown_item.xml" value="0.1" />
@@ -26,6 +29,7 @@
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout/fragment_slideshow.xml" value="0.21784420289855072" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout/main_menu.xml" value="0.21784420289855072" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout/nav_header_main.xml" value="0.11302083333333333" />
+        <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/layout/row_buses.xml" value="0.264" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/menu/activity_main_drawer.xml" value="0.25416666666666665" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/menu/main.xml" value="0.264" />
         <entry key="..\:/Materi_bangkit_2022_Android/week_2/IntegratedBusesApp/app/src/main/res/menu/menu_kenek.xml" value="0.25416666666666665" />
